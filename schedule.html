@@ -3,23 +3,72 @@
 <head>
   <meta charset="UTF-8">
   <title>Schedule</title>
-  
+
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    body { font-family: 'Roboto', sans-serif; background: #f5f5f5; margin: 0; padding: 0; }
-    header, footer { background: #2c3e50; color: white; text-align: center; padding: 1rem; }
-    nav { background: #34495e; text-align: center; padding: 0.5rem; }
-    nav a { color: white; margin: 0 1rem; text-decoration: none; font-weight: bold; }
-    nav a:hover { text-decoration: underline; }
-    main { padding: 2rem; max-width: 800px; margin: auto; background: white; }
-  </style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto', sans-serif;
+      background: #f5f5f5;
+    }
 
+    body {
+      display: flex;
+      flex-direction: column;
+      widht: 80%
+    }
+
+    header, footer {
+      background: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    nav {
+      background: #34495e;
+      text-align: center;
+      padding: 0.5rem;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      flex: 1;
+      padding: 0;
+      margin: ;
+      background: white;
+      display: flex;
+      flex-direction: column;
+    }
+
+    iframe {
+      flex: 1;
+      border: none;
+      width: 100%;
+    }
+
+    .schedule-info {
+      padding: 1rem;
+    }
+  </style>
 </head>
 <body>
   <header>
     <h1>Class Schedule</h1>
   </header>
-  
+
   <nav>
     <a href="index.html">Instructors</a>
     <a href="about.html">About WTSDA</a>
@@ -28,17 +77,14 @@
   </nav>
 
   <main>
-    <h2>Weekly Class Schedule</h2>
-    <ul>
-      <li><strong>Monday & Wednesday:</strong> 6:00 PM - 7:00 PM (Kids), 7:00 PM - 8:30 PM (Adults)</li>
-      <li><strong>Saturday:</strong> 10:00 AM - 11:30 AM (All Ages)</li>
-    </ul>
-    <p>Classes held at both NYC and Glenbrook locations. Contact us for exact location times.</p>
+    <h2>Class Schedule</h2>
+    <a href="https://docs.google.com/file/d/1yWj2ZKaCjYiMXCbSS_SXEXvWiVjsD3Gh/preview" target="_blank">Follow the link to view it in a separate window.</a>
+    <br>
+    <iframe src="https://docs.google.com/file/d/1yWj2ZKaCjYiMXCbSS_SXEXvWiVjsD3Gh/preview" allow="autoplay"></iframe>
   </main>
-  
+
   <footer>
     <p>&copy; 2025 Glenbrook Martial Arts, LLC. All rights reserved.</p>
   </footer>
-
 </body>
 </html>
