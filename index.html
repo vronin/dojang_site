@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Our Instructors - NYC TSD & Glenbrook Martial Arts</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-m0cXZz1RzF7g5QweMHO0K+ckYUPqG88vCHMkOKLE3CLVv9vDh7qtKPgGnUONffAyOUmEAFm+2ZqEY0nxvQL4nA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <style>
     * {
       margin: 0;
@@ -54,7 +55,7 @@
 
     .row {
       display: flex;
-     justify-content: center;
+      justify-content: center;
       gap: 2rem;
       margin-bottom: 2rem;
     }
@@ -81,18 +82,27 @@
 
     .social p {
       margin-bottom: 0.5rem;
+      font-size: 1.2rem;
+      font-weight: bold;
     }
 
     .social a {
-      display: block;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
       margin: 0.25rem 0;
-      color: #3498db;
+      color: #1877f2;
       text-decoration: none;
       font-weight: bold;
+      font-size: 1.1rem;
     }
 
     .social a:hover {
       text-decoration: underline;
+    }
+
+    .social i {
+      font-size: 1.3rem;
     }
 
     footer {
@@ -102,6 +112,15 @@
       padding: 1rem;
       margin-top: 2rem;
     }
+
+    .facebook-img {
+      width: 400px;
+      height: auto;
+    }
+
+    .social a {
+       margin-right: 40px; 
+    } 
   </style>
 </head>
 <body>
@@ -136,7 +155,7 @@
         </div> 
         
         <div class="card">
-          <img src="data:image/jpeg;base64,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" alt="Ms. Ardis Strong"/>
+          <img src="https://static.vecteezy.com/system/resources/thumbnails/003/337/584/small/default-avatar-photo-placeholder-profile-icon-vector.jpg" alt="Ms. Ardis Strong"/>
           <h3>Ms. Ardis Strong</h3>
           <p>3rd Degree Black Belt</p>
           <p>Text placeholder</p>
@@ -164,25 +183,27 @@
           <p>2nd Degree Black Belt</p>
           <p>Text placeholder</p>
         </div>
-
       </div>      
     </div>
 
     <div class="row">
       <div class="card">
         <img src="https://static.vecteezy.com/system/resources/thumbnails/003/337/584/small/default-avatar-photo-placeholder-profile-icon-vector.jpg" alt="Placeholder image"  />
-
         <h3>Mr. Victo Ronin</h3>
         <p>1st Degree Black Belt</p>
         <p>Text placeholder</p>
       </div>      
     </div>      
-  </div>    
 
     <div class="social">
       <p>Follow us on Facebook:</p>
-      <a href="https://www.facebook.com/glenbrookma" target="_blank">Glenbrook Martial Arts</a>
-      <a href="https://www.facebook.com/nyctsd/" target="_blank">New York City TSD</a>
+      <a href="https://www.facebook.com/glenbrookma" target="_blank">
+        <img class="facebook-img" src="img/gma_facebook.png" alt="Glenbrook Martial Arts Facebook" />
+      </a>
+             
+      <a href="https://www.facebook.com/nyctsd" target="_blank">
+        <img class="facebook-img" src="img/nyctsd_facebook.png" alt="New York City Tang Soo Do" />
+      </a>
     </div>
   </main>
 
@@ -191,4 +212,3 @@
   </footer>
 </body>
 </html>
-
